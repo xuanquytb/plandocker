@@ -1,0 +1,50 @@
+version: '3.8'
+
+networks:
+  internalnet:
+    driver: bridge
+
+services:
+  database-mysql:
+    container_name: mysql_container
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_DATABASE=webecommerce
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - '3306:3306'
+    expose:
+      - 3306
+    networks:
+      - internalnet
+
+  backend:
+    container_name: backend_container
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      - DB_PORT=3306
+      - DB_HOST=database-mysql
+      - URL_REACT=http://localhost
+      # - DB_HOST=host.docker.internal
+    networks:
+      - internalnet
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+  nginx:
+    container_name: frontend_container
+    image: nginx:1.23.3
+    ports:
+      - 80:80
+    networks:
+      - internalnet
+    volumes:
+      - ../frontend/build:/usr/share/nginx/html
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+
+# docker compose -p node-reactjs-v2 up -d

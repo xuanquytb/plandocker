@@ -1,0 +1,131 @@
+.box_displays {
+  margin-top: 30px;
+}
+
+.box_displays__header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.box_displays__header::before {
+  content: "";
+  width: 90%;
+  bottom: 9.1px;
+  right: 10px;
+  position: absolute;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.box_displays__header-title {
+  position: relative;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.box_displays__header-title::before {
+  content: "";
+  width: 33%;
+  bottom: -3.5px;
+  left: 0px;
+  position: absolute;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.box_displays__header-title h2 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 2rem;
+}
+
+.box_displays__header-selection {
+  padding-left: 300px;
+}
+
+.box_displays__header-selection-link {
+  display: inline-block;
+  margin: 20px 14px;
+  font-weight: 500;
+}
+
+.box_displays__header-selection-link:hover {
+  color: var(--primary-color);
+  transition: 0.3s linear;
+}
+
+.box_displays__header-selection-icon {
+  margin-right: 4px;
+}
+
+.box_displays__header-selection-link-current {
+  color: var(--primary-color);
+}
+
+/* box_displays Container */
+
+/* box_displays category */
+
+.box_displays__category-list {
+  display: flex;
+  margin: 0 0 22px 0;
+}
+
+.box_displays__category-item {
+  padding: 5px 20px 5px 0;
+  font-size: 1.3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.box_displays__category-item::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -12px;
+  border-right: 1px solid var(--border-color);
+}
+
+.box_displays__category-item:first-child::before {
+  display: none;
+}
+
+.box_displays__category-link:hover {
+  color: var(--primary-color);
+  transition: 0.3s linear;
+}
+
+/* Product */
+.box_displays__product-medium-list {
+  /* justify-content: center; */
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.box_displays__product-lar-link {
+  display: block;
+  position: relative;
+  transition: all 0.4s linear;
+}
+
+.box_displays__product-lar-img {
+  background-size: cover;
+  width: 100%;
+  display: block;
+}
+
+.box_displays__product-lar-link:hover .coating {
+  transform: scale(100%);
+}
+
+.box_displays__product-lar-img:hover {
+  filter: brightness(0.9);
+}
+
+@media only screen and (max-width: 390px) {
+  .box_displays__product-medium::-webkit-scrollbar {
+    display: none;
+  }
+}

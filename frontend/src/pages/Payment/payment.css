@@ -1,0 +1,348 @@
+@media only screen and (max-width: 414px) {
+  .main-Payment {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    margin: 10px 3px;
+    justify-content: center;
+    /* jjj */
+  }
+
+  .box-left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .box-radio-option {
+    height: 58px;
+    width: 93.5vw;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+  }
+
+  .flex-left {
+    flex: 1;
+  }
+  .flex-right {
+    flex: 1;
+  }
+  .box-right {
+    min-width: 380px;
+    max-height: 591px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .TitlePayment {
+    width: 383px;
+    height: 53px;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+  }
+
+  .TitlePayment h3 {
+    margin-left: 20px;
+  }
+
+  .form-info-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .box-input-addres {
+    width: 90vw;
+  }
+
+  .itemBuy {
+    width: 347px;
+    height: 81px;
+    border-bottom: 1px solid gray;
+    border-radius: 10px;
+  }
+
+  .delivery {
+    width: 97%;
+    height: 58px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .detail-Order {
+    width: 383px;
+  }
+
+  .itemBuy-detail {
+    display: flex;
+  }
+
+  .infomation {
+    padding: 0;
+    margin: 0 10px;
+    display: flex;
+  }
+  .infomation h3 {
+    margin: 0;
+    font-size: 13px;
+    word-wrap: break-word;
+    max-height: 40px;
+    overflow-y: auto;
+  }
+
+  .infomation-left {
+    flex: 2;
+    width: 213px;
+  }
+
+  .infomation-left h3 {
+    overflow: hidden;
+  }
+  .infomation-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+
+  .btn-buy {
+    width: 120px;
+    height: 40px;
+    margin-left: 239px;
+    font-size: 15px;
+    border-radius: 24px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .description-payment {
+    margin-top: 8px;
+    font-size: 20px;
+    width: 93.5vw;
+    color: red;
+    border: 0.5px dotted green;
+    border-radius: 24px;
+    padding: 8px;
+    line-height: 26px;
+  }
+
+  .hind-text-dot-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .content-banner {
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+    max-width: 962px;
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+  }
+
+  .overlay {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 2;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-Payment {
+    display: flex;
+    padding: 5px 5px;
+    margin: 10px 3px;
+    justify-content: center;
+    /* jjj */
+  }
+
+  .box-left {
+    min-width: 1085px;
+    max-height: 591px;
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid gray;
+  }
+
+  .flex-left {
+    flex: 1;
+  }
+  .flex-right {
+    flex: 1;
+  }
+  .box-right {
+    min-width: 380px;
+    max-height: 591px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .TitlePayment {
+    width: 383px;
+    height: 53px;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+  }
+
+  .TitlePayment h3 {
+    margin-left: 20px;
+  }
+  .form-info-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-input-addres {
+    width: 505px;
+  }
+
+  .itemBuy {
+    width: 347px;
+    height: 81px;
+    border-bottom: 1px solid gray;
+    border-radius: 10px;
+  }
+
+  .detail-Order {
+    width: 383px;
+    height: 441px;
+  }
+
+  .itemBuy-detail {
+    display: flex;
+  }
+
+  .infomation {
+    padding: 0;
+    margin: 0 10px;
+    display: flex;
+  }
+  .infomation h3 {
+    margin: 0;
+    font-size: 13px;
+    word-wrap: break-word;
+    max-height: 40px;
+    overflow-y: auto;
+  }
+
+  .infomation-left {
+    flex: 2;
+    width: 213px;
+  }
+
+  .infomation-left h3 {
+    overflow: hidden;
+  }
+  .infomation-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+
+  .btn-buy {
+    width: 120px;
+    height: 40px;
+    margin-left: 239px;
+    font-size: 15px;
+    border-radius: 24px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .description-payment {
+    margin-top: 8px;
+    font-size: 20px;
+    width: 380px;
+    color: red;
+    border: 0.5px dotted green;
+    border-radius: 24px;
+    padding: 8px;
+    line-height: 26px;
+  }
+
+  .hind-text-dot-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .content-banner {
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+    max-width: 962px;
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+  }
+
+  .overlay {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 2;
+  }
+
+  .delivery {
+    width: 380px;
+    height: 58px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-radio-option {
+    height: 58px;
+    width: 380px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+  }
+}

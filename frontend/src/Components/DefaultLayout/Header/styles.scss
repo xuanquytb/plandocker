@@ -1,0 +1,39 @@
+.list-cards-items {
+  max-height: 350px;
+  overflow-y: auto;
+
+  .box-cards-item {
+    .cards-item {
+      display: flex;
+      margin: 10px 0;
+
+      .image-product {
+        min-width: 60px;
+        max-width: 60px;
+      }
+      .des-product {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        strong {
+          font-size: 12.2px;
+        }
+      }
+    }
+  }
+}
+
+.box-checkout {
+  height: fit-content;
+  text-align: right;
+  button {
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #33cccc;
+    color: #fff;
+  }
+  :hover {
+    transform: scale(1.1);
+  }
+}

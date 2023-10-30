@@ -1,0 +1,9 @@
+$lines: 1 2 3;
+@each $i in $lines {
+    .hind-text-dot-#{$i} {
+        display: -webkit-box;
+        -webkit-line-clamp: $i;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
